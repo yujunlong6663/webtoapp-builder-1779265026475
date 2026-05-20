@@ -1,0 +1,22 @@
+{
+  "name": "webtoapp",
+  "version": "1.0.0",
+  "description": "Built with WebToApp",
+  "scripts": {
+    "cap:init": "npx cap init webtoapp appu1q2m8 --web-dir=www",
+    "cap:add": "npx cap add android",
+    "cap:sync": "npx cap sync android",
+    "cap:build": "npm run build && npx cap copy && npx cap sync"
+  },
+  "dependencies": {
+    "@capacitor/core": "7.6.1",
+    "@capacitor/camera": "7.0.5",
+    "@capacitor/filesystem": "7.1.8",
+    "@capacitor-community/contacts": "7.2.0",
+    "@capacitor/geolocation": "7.1.8"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "7.6.1",
+    "@capacitor/android": "7.6.1"
+  }
+}
